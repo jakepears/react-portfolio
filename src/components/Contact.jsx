@@ -3,13 +3,17 @@
 import { useState } from 'react';
 
 export default function Contact() {
+	// State to hold form data
 	const [formData, setFormData] = useState({
 		name: '',
 		email: '',
 		message: '',
 	});
+
+	// State to hold validation errors
 	const [errors, setErrors] = useState({});
 
+	// Handle changes in form inputs
 	const handleChange = (e) => {
 		const { name, value } = e.target;
 		setFormData((prevState) => ({
@@ -18,6 +22,7 @@ export default function Contact() {
 		}));
 	};
 
+	// Validate form fields
 	const validateForm = () => {
 		let tempErrors = {};
 		if (!formData.name.trim()) tempErrors.name = 'Name is required';
@@ -31,6 +36,7 @@ export default function Contact() {
 		return Object.keys(tempErrors).length === 0;
 	};
 
+	// Handle form submission
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		if (validateForm()) {
@@ -41,6 +47,7 @@ export default function Contact() {
 		}
 	};
 
+	// Handle input blur (when loses focus)
 	const handleBlur = (e) => {
 		const { name, value } = e.target;
 		if (!value.trim()) {

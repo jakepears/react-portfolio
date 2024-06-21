@@ -8,14 +8,14 @@ export default function Footer() {
 					href='https://github.com/jakepears'
 					target='_blank'
 					rel='noopener noreferrer'
-					className='hover:text-gray-300 transition-colors duration-300'>
+					className='hoverUnderline'>
 					GitHub
 				</a>
 				<a
 					href='https://www.linkedin.com/in/jakepearson123'
 					target='_blank'
 					rel='noopener noreferrer'
-					className='hover:text-gray-300 transition-colors duration-300'>
+					className=' hoverUnderline'>
 					LinkedIn
 				</a>
 			</div>
