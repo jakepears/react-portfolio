@@ -16,7 +16,7 @@ import Resume from './components/Resume';
 function App() {
 	return (
 		<Router>
-			<div className='flex flex-col min-h-screen'>
+			<div className='flex flex-col min-h-screen bg-[#222831] text-[#EEEEEE]'>
 				<Header />
 				<main className='flex-grow'>
 					<Routes>

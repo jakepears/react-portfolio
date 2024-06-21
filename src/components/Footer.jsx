@@ -2,20 +2,23 @@
 
 export default function Footer() {
 	return (
-		<div>
-			<h2>Contact Me</h2>
-			<form>
-				<label htmlFor='name'>Name:</label>
-				<input type='text' id='name' name='name' />
-
-				<label htmlFor='email'>Email:</label>
-				<input type='email' id='email' name='email' />
-
-				<label htmlFor='message'>Message:</label>
-				<textarea id='message' name='message' rows='4' />
-
-				<button type='submit'>Submit</button>
-			</form>
-		</div>
+		<footer className='bg-gray-800 text-white p-4'>
+			<div className='container mx-auto flex justify-center space-x-4'>
+				<a
+					href='https://github.com/yourusername'
+					target='_blank'
+					rel='noopener noreferrer'
+					className='hover:text-gray-300 transition-colors duration-300'>
+					GitHub
+				</a>
+				<a
+					href='https://www.linkedin.com/in/yourusername'
+					target='_blank'
+					rel='noopener noreferrer'
+					className='hover:text-gray-300 transition-colors duration-300'>
+					LinkedIn
+				</a>
+			</div>
+		</footer>
 	);
 }
