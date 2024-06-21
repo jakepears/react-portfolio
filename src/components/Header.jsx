@@ -11,14 +11,14 @@ function Header() {
 				<h1 className='text-2xl font-bold'>Jake Pearson</h1>
 				<nav>
 					<ul className='flex space-x-4'>
-						<li>
+						<li className='hoverUnderline'>
 							<Link
 								to='/about'
 								className={location.pathname === '/about' ? 'font-bold' : ''}>
 								About Me
 							</Link>
 						</li>
-						<li>
+						<li className='hoverUnderline'>
 							<Link
 								to='/portfolio'
 								className={
@@ -27,14 +27,14 @@ function Header() {
 								Portfolio
 							</Link>
 						</li>
-						<li>
+						<li className='hoverUnderline'>
 							<Link
 								to='/contact'
 								className={location.pathname === '/contact' ? 'font-bold' : ''}>
 								Contact
 							</Link>
 						</li>
-						<li>
+						<li className='hoverUnderline'>
 							<Link
 								to='/resume'
 								className={location.pathname === '/resume' ? 'font-bold' : ''}>

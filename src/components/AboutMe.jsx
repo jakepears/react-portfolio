@@ -9,7 +9,7 @@ export default function AboutMe() {
 				<img
 					src={Selfie}
 					alt='Jake Pearson '
-					className='w-64 h-64 rounded-full object-cover'
+					className='w-64 h-64 rounded-full object-cover betterShadow'
 				/>
 				<div className='flex-1 text-center md:text-xl sm:text-sm'>
 					<p className='mb-4'>
